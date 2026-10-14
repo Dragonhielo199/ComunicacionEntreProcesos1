@@ -1,0 +1,8 @@
+URL del repositorio de GitHub:
+
+
+EJERCICIO 1: TUBERÍA
+La clase Tuberia inicia los comandos de Windows cmd.exe /c dir y cmd.exe /c sort mediante ProcessBuilder. Lee línea a línea la salida estándar del primer proceso con BufferedReader e InputStreamReader y la escribe en la entrada estándar del segundo mediante OutputStream.write(). Al cerrar el flujo de entrada de sort, este recibe el fin de los datos. Tuberia lee entonces la salida de sort y la muestra por pantalla, al llegar al final de ese flujo, imprime "Finalizada la ejecución".
+
+EJERCICIO 2: LECTOR Y ESCRITOR
+Lector solicita un entero usando Entrada.entero() y crea Escritor como proceso hijo mediante ProcessBuilder. Envía el número por getOutputStream(), seguido de un salto de línea, y cierra ese flujo. Escritor lo lee de su entrada estándar mediante Entrada.entero() y muestra los diez números posteriores. Lector recoge la salida estándar del hijo y la muestra en la consola.
